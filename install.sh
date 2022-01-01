@@ -68,7 +68,7 @@ fi
 # Citrix Workspace
 # ================
 DOTFILE_STEP="Setting up Citrix Workspace" describeTask
-
+echo "TODO"
 
 # ===
 # Git
@@ -81,6 +81,9 @@ cat <<EOF > "${HOME}/.gitconfig"
 [user]
   name  = "${USER_DISPLAYNAME}"
   email = "${USER_EMAIL}"
+
+[pull]
+  ff = only
 EOF
 describeTaskSuccess
 

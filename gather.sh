@@ -5,7 +5,7 @@ set -e
 source "${PWD}/config.sh"
 
 # Cargo
-cargo install --list | awk '/^\w/ { print $1 }' > "${PWD}/cargo/cargo.list"
+cargo install --list | awk '/^\w/ { print $1 }' > "${PWD}/cargo/crates.list"
 
 # Git
 cp "${HOME}/.gitconfig" "${PWD}/git/gitconfig.gathered"

@@ -1,8 +1,4 @@
 {
-  "editor.fontFamily": "'FuraCode NF', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "extensions.autoCheckUpdates": true,
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary"
 }
