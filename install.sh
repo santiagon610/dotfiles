@@ -41,7 +41,6 @@ if command -v "apt-get" &> /dev/null; then
   done < "${PWD}/apt/apt.list"
 fi
 describeTaskSuccess
-exit 0
 
 # =====
 # Cargo
@@ -64,6 +63,12 @@ else
   set -e
   echo "   Crates list matches, skipping"
 fi
+
+# ================
+# Citrix Workspace
+# ================
+DOTFILE_STEP="Setting up Citrix Workspace" describeTask
+
 
 # ===
 # Git

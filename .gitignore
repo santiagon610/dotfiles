@@ -354,3 +354,6 @@ MigrationBackup/
 
 # Extracted Config Files
 **/*.gathered
+citrix/*.pem
+citrix/*.cer
+citrix/*.crt
