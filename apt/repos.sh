@@ -5,6 +5,18 @@ aptAddHttpsTransport() {
     sudo apt-get update
 }
 
+# Brave Browser
+
+if [[ -f /etc/apt/sources.list.d/brave-browser-release.list ]]; then
+    echo "   Brave Browser repository definition already exists, skipping"
+else
+    echo "   Creating Brave Browser repository definition"
+    sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+    aptAddHttpsTransport
+fi
+
+
 # Google Chrome
 if [[ -f /etc/apt/sources.list.d/google-chrome.list ]]; then
     echo "   Google Chrome repository definition already exists, skipping"

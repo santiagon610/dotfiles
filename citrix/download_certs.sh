@@ -4,6 +4,7 @@
 #
 REMHOST=$1
 REMPORT=${2:-443}
+CERT_DESTINATION="/opt/Citrix/ICAClient/keystore/cacerts"
 
 if [ -z "${REMHOST}" ]; then
     echo "Please specify an FQDN"
@@ -18,4 +19,3 @@ else
         openssl s_client -host "${REMHOST}" -port "${REMPORT}" -showcerts | \
         awk '/BEGIN CERT/ {p=1} ; p==1; /END CERT/ {p=0}' > allcerts.pem
 fi
-

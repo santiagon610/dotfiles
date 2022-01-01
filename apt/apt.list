@@ -1,4 +1,5 @@
 build-essential
+brave-browser
 cargo
 code
 curl
