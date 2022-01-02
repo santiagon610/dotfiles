@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#shellcheck disable=SC2139
 
 alias reload='exec ${SHELL}'
 alias tf="terraform"
