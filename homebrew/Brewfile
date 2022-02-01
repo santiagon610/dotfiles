@@ -1,0 +1,8 @@
+tap "homebrew/bundle"
+tap "homebrew/core"
+brew "dive"
+brew "hugo"
+brew "kubernetes-cli"
+brew "tfenv"
+brew "topgrade"
+brew "yq"
