@@ -1,4 +1,13 @@
 {
     "editor.tabSize": 2,
-    "editor.renderWhitespace": "boundary"
+    "editor.renderWhitespace": "boundary",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "window.titleBarStyle": "custom",
+    "window.dialogStyle": "custom"
 }
